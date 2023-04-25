@@ -7,3 +7,5 @@
 </p>
 
 ## About
+**This extension helps to highlight on the site the courses that you are studying now,
+  and do not want to look for them again every time.**
