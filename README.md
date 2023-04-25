@@ -15,4 +15,7 @@
 3.  In the window that opens, select the courses that you need (by course number). </br>
 4.  If you want to remove the course from the selection, then uncheck the checkbox and reload the web page. </br>
 ## Developers:</br>
-<a href="https://github.com/david-daveee">David Nalivkin</a>
+- <a href="https://github.com/david-daveee">David Nalivkin</a>
+
+## License:
+- Under the MIT license
