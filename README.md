@@ -7,7 +7,7 @@
 </p>
 
 ## About:
-**This extension helps to highlight on the site the courses that you are studying now,
+**This extension helps to highlight on the site (MEGA) the courses that you are studying now,
   and do not to look for or search them again every time.**
 ## Anything you need:
 1.  Download and install this extension through <a href="chrome://extensions/">"chrome://extensions/"</a>. </br>
