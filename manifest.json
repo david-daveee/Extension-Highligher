@@ -1,0 +1,12 @@
+{
+    "manifest_version":2,
+    "name":"MEGA Courses Highlighter",
+    "description":"Extention to highlight courses in main folder",
+    "version":"1.0",
+    "content_scripts":[{
+        "matches":["https://mega.nz/*"],
+        "css":["main.css"],
+        "js": ["main.js"],
+        "html" :["popup.html"]
+    }]
+}
