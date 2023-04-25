@@ -1,7 +1,7 @@
 {
     "manifest_version":2,
-    "name":"MEGA Courses Highlighter",
-    "description":"Extention to highlight courses in main folder",
+    "name":"<MEGA> Courses Highlighter",
+    "description":"Highlighter for Open University folder in MEGA!",
     "version":"1.0",
     "permissions": ["activeTab", "storage"],
     "browser_action": {
@@ -10,5 +10,10 @@
     "content_scripts":[{
         "matches":["<all_urls>"],
         "js": ["contentScripts.js"]
-    }]
+    }],
+    "icons": {
+        "16":"/images/mega 2.0 16x16.png",
+        "48":"/images/mega 2.0 48x48.png",
+        "128":"/images/mega 2.0 128x128.png"
+    }
 }
