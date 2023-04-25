@@ -3,10 +3,12 @@
     "name":"MEGA Courses Highlighter",
     "description":"Extention to highlight courses in main folder",
     "version":"1.0",
+    "permissions": ["activeTab", "storage"],
+    "browser_action": {
+        "default_popup": "popup.html"
+      },
     "content_scripts":[{
-        "matches":["https://mega.nz/*"],
-        "css":["main.css"],
-        "js": ["main.js"],
-        "html" :["popup.html"]
+        "matches":["<all_urls>"],
+        "js": ["contentScripts.js"]
     }]
 }
