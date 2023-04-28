@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/Version-v1.0(Alpha)-success "border="0">
 <img src="https://img.shields.io/badge/Manifest-v2.0-ff69b4"border="0">
 <img src="https://img.shields.io/badge/API-chrome.storage-orange">
-<a href= "https://discord.com/channels/761272611476602942/761272611476602945"><img alt="Discord" src="https://img.shields.io/discord/761272611476602942?color=blueviolet&label=OpenU%20&logo=discord&logoColor=white"><a/>
+<a href= "https://discord.com/channels/761272611476602942/761272611476602945"><img src="https://img.shields.io/github/license/david-daveee/Extension-Highligher.svg"><a/>
 </p>
 
 ## About:
