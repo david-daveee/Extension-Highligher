@@ -1,29 +1,3 @@
-window.addEventListener('click', function() {
-    'use strict';
-    var course_1 = 2;
-    var course_2 = 8;
-    var course_3 = 16;
-    var course_4 = 29;
-    var course_5 = 31;
-    var course_6 = 30;
-    setTimeout(() => {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-        //p[course_1].style.backgroundColor = "#80ff80";
-        //p[course_2].style.backgroundColor = "#80ff80";
-        //p[course_3].style.backgroundColor = "#80ff80";
-        //p[course_4].style.backgroundColor = "#80ff80";
-        //p[course_5].style.backgroundColor = "#80ff80";
-        //p[course_6].style.backgroundColor = "#80ff80";
-
- }, 1000);
-    
-}
-
-
-);
-
-
-
 window.addEventListener('click', function(){
   setTimeout(() => {
   
@@ -42,7 +16,7 @@ function updateContent1(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[2].style.backgroundColor  = "#80ff80";
-    p[2].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[2].style.backgroundColor  = "#333333";
     p[2].style.fontWeight  ="bold";
     p[2].style.color = "white";
     p[2].style.border = "1px solid black";
@@ -67,7 +41,7 @@ function updateContent2(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[3].style.backgroundColor  = "#80ff80";
-    p[3].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[3].style.backgroundColor  = "#333333";
     p[3].style.fontWeight  ="bold";
     p[3].style.color = "white";
     p[3].style.border = "1px solid black";
@@ -92,7 +66,7 @@ function updateContent3(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[4].style.backgroundColor  = "#80ff80";
-    p[4].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[4].style.backgroundColor  = "#333333";
     p[4].style.fontWeight  ="bold";
     p[4].style.color = "white";
     p[4].style.border = "1px solid black";
@@ -117,7 +91,7 @@ function updateContent4(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[5].style.backgroundColor  = "#80ff80";
-    p[5].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[5].style.backgroundColor  = "#333333";
     p[5].style.fontWeight  ="bold";
     p[5].style.color = "white";
     p[5].style.border = "1px solid black";
@@ -142,7 +116,7 @@ function updateContent5(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[6].style.backgroundColor  = "#80ff80";
-    p[6].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[6].style.backgroundColor  = "#333333";
     p[6].style.fontWeight  ="bold";
     p[6].style.color = "white";
     p[6].style.border = "1px solid black";
@@ -167,7 +141,7 @@ function updateContent6(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[7].style.backgroundColor  = "#80ff80";
-    p[7].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[7].style.backgroundColor  = "#333333";
     p[7].style.fontWeight  ="bold";
     p[7].style.color = "white";
     p[7].style.border = "1px solid black";
@@ -192,7 +166,7 @@ function updateContent7(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[8].style.backgroundColor  = "#80ff80";
-    p[8].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[8].style.backgroundColor  = "#333333";
     p[8].style.fontWeight  ="bold";
     p[8].style.color = "white";
     p[8].style.border = "1px solid black";
@@ -217,7 +191,7 @@ function updateContent8(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[9].style.backgroundColor  = "#80ff80";
-    p[9].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[9].style.backgroundColor  = "#333333";
     p[9].style.fontWeight  ="bold";
     p[9].style.color = "white";
     p[9].style.border = "1px solid black";
@@ -242,7 +216,7 @@ function updateContent9(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[10].style.backgroundColor  = "#80ff80";
-    p[10].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[10].style.backgroundColor  = "#333333";
     p[10].style.fontWeight  ="bold";
     p[10].style.color = "white";
     p[10].style.border = "1px solid black";
@@ -267,7 +241,7 @@ function updateContent10(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[11].style.backgroundColor  = "#80ff80";
-    p[11].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[11].style.backgroundColor  = "#333333";
     p[11].style.fontWeight  ="bold";
     p[11].style.color = "white";
     p[11].style.border = "1px solid black";
@@ -292,7 +266,7 @@ function updateContent11(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[12].style.backgroundColor  = "#80ff80";
-    p[12].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[12].style.backgroundColor  = "#333333";
     p[12].style.fontWeight  ="bold";
     p[12].style.color = "white";
     p[12].style.border = "1px solid black";
@@ -317,7 +291,7 @@ function updateContent12(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[13].style.backgroundColor  = "#80ff80";
-    p[13].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[13].style.backgroundColor  = "#333333";
     p[13].style.fontWeight  ="bold";
     p[13].style.color = "white";
     p[13].style.border = "1px solid black";
@@ -342,7 +316,7 @@ function updateContent13(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[14].style.backgroundColor  = "#80ff80";
-    p[14].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[14].style.backgroundColor  = "#333333";
     p[14].style.fontWeight  ="bold";
     p[14].style.color = "white";
     p[14].style.border = "1px solid black";
@@ -367,7 +341,7 @@ function updateContent14(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[15].style.backgroundColor  = "#80ff80";
-    p[15].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[15].style.backgroundColor  = "#333333";
     p[15].style.fontWeight  ="bold";
     p[15].style.color = "white";
     p[15].style.border = "1px solid black";
@@ -392,7 +366,7 @@ function updateContent15(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[16].style.backgroundColor  = "#80ff80";
-    p[16].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[16].style.backgroundColor  = "#333333";
     p[16].style.fontWeight  ="bold";
     p[16].style.color = "white";
     p[16].style.border = "1px solid black";
@@ -417,7 +391,7 @@ function updateContent16(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[17].style.backgroundColor  = "#80ff80";
-    p[17].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[17].style.backgroundColor  = "#333333";
     p[17].style.fontWeight  ="bold";
     p[17].style.color = "white";
     p[17].style.border = "1px solid black";
@@ -442,7 +416,7 @@ function updateContent17(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[18].style.backgroundColor  = "#80ff80";
-    p[18].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[18].style.backgroundColor  = "#333333";
     p[18].style.fontWeight  ="bold";
     p[18].style.color = "white";
     p[18].style.border = "1px solid black";
@@ -467,7 +441,7 @@ function updateContent18(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[19].style.backgroundColor  = "#80ff80";
-    p[19].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[19].style.backgroundColor  = "#333333";
     p[19].style.fontWeight  ="bold";
     p[19].style.color = "white";
     p[19].style.border = "1px solid black";
@@ -492,7 +466,7 @@ function updateContent19(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[20].style.backgroundColor  = "#80ff80";
-    p[20].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[20].style.backgroundColor  = "#333333";
     p[20].style.fontWeight  ="bold";
     p[20].style.color = "white";
     p[20].style.border = "1px solid black";
@@ -517,7 +491,7 @@ function updateContent20(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[21].style.backgroundColor  = "#80ff80";
-    p[21].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[21].style.backgroundColor  = "#333333";
     p[21].style.fontWeight  ="bold";
     p[21].style.color = "white";
     p[21].style.border = "1px solid black";
@@ -542,7 +516,7 @@ function updateContent21(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[22].style.backgroundColor  = "#80ff80";
-    p[22].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[22].style.backgroundColor  = "#333333";
     p[22].style.fontWeight  ="bold";
     p[22].style.color = "white";
     p[22].style.border = "1px solid black";
@@ -567,7 +541,7 @@ function updateContent22(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[23].style.backgroundColor  = "#80ff80";
-    p[23].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[23].style.backgroundColor  = "#333333";
     p[23].style.fontWeight  ="bold";
     p[23].style.color = "white";
     p[23].style.border = "1px solid black";
@@ -592,7 +566,7 @@ function updateContent23(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[24].style.backgroundColor  = "#80ff80";
-    p[24].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[24].style.backgroundColor  = "#333333";
     p[24].style.fontWeight  ="bold";
     p[24].style.color = "white";
     p[24].style.border = "1px solid black";
@@ -617,7 +591,7 @@ function updateContent24(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[25].style.backgroundColor  = "#80ff80";
-    p[25].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[25].style.backgroundColor  = "#333333";
     p[25].style.fontWeight  ="bold";
     p[25].style.color = "white";
     p[25].style.border = "1px solid black";
@@ -642,7 +616,7 @@ function updateContent25(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[26].style.backgroundColor  = "#80ff80";
-    p[26].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[26].style.backgroundColor  = "#333333";
     p[26].style.fontWeight  ="bold";
     p[26].style.color = "white";
     p[26].style.border = "1px solid black";
@@ -667,7 +641,7 @@ function updateContent26(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[27].style.backgroundColor  = "#80ff80";
-    p[27].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[27].style.backgroundColor  = "#333333";
     p[27].style.fontWeight  ="bold";
     p[27].style.color = "white";
     p[27].style.border = "1px solid black";
@@ -692,7 +666,7 @@ function updateContent27(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[28].style.backgroundColor  = "#80ff80";
-    p[28].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[28].style.backgroundColor  = "#333333";
     p[28].style.fontWeight  ="bold";
     p[28].style.color = "white";
     p[28].style.border = "1px solid black";
@@ -717,7 +691,7 @@ function updateContent28(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[29].style.backgroundColor  = "#80ff80";
-    p[29].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[29].style.backgroundColor  = "#333333";
     p[29].style.fontWeight  ="bold";
     p[29].style.color = "white";
     p[29].style.border = "1px solid black";
@@ -742,7 +716,7 @@ function updateContent29(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[30].style.backgroundColor  = "#80ff80";
-    p[30].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[30].style.backgroundColor  = "#333333";
     p[30].style.fontWeight  ="bold";
     p[30].style.color = "white";
     p[30].style.border = "1px solid black";
@@ -767,7 +741,7 @@ function updateContent30(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[31].style.backgroundColor  = "#80ff80";
-    p[31].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[31].style.backgroundColor  = "#333333";
     p[31].style.fontWeight  ="bold";
     p[31].style.color = "white";
     p[31].style.border = "1px solid black";
@@ -792,7 +766,7 @@ function updateContent31(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[32].style.backgroundColor  = "#80ff80";
-    p[32].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[32].style.backgroundColor  = "#333333";
     p[32].style.fontWeight  ="bold";
     p[32].style.color = "white";
     p[32].style.border = "1px solid black";
@@ -817,7 +791,7 @@ function updateContent32(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[33].style.backgroundColor  = "#80ff80";
-    p[33].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[33].style.backgroundColor  = "#333333";
     p[33].style.fontWeight  ="bold";
     p[33].style.color = "white";
     p[33].style.border = "1px solid black";
@@ -842,7 +816,7 @@ function updateContent33(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[34].style.backgroundColor  = "#80ff80";
-    p[34].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[34].style.backgroundColor  = "#333333";
     p[34].style.fontWeight  ="bold";
     p[34].style.color = "white";
     p[34].style.border = "1px solid black";
@@ -867,7 +841,7 @@ function updateContent34(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[35].style.backgroundColor  = "#80ff80";
-    p[35].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[35].style.backgroundColor  = "#333333";
     p[35].style.fontWeight  ="bold";
     p[35].style.color = "white";
     p[35].style.border = "1px solid black";
@@ -892,7 +866,7 @@ function updateContent35(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[36].style.backgroundColor  = "#80ff80";
-    p[36].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[36].style.backgroundColor  = "#333333";
     p[36].style.fontWeight  ="bold";
     p[36].style.color = "white";
     p[36].style.border = "1px solid black";
@@ -917,7 +891,7 @@ function updateContent36(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[37].style.backgroundColor  = "#80ff80";
-    p[37].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[37].style.backgroundColor  = "#333333";
     p[37].style.fontWeight  ="bold";
     p[37].style.color = "white";
     p[37].style.border = "1px solid black";
@@ -942,7 +916,7 @@ function updateContent37(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[38].style.backgroundColor  = "#80ff80";
-    p[38].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[38].style.backgroundColor  = "#333333";
     p[38].style.fontWeight  ="bold";
     p[38].style.color = "white";
     p[38].style.border = "1px solid black";
@@ -967,7 +941,7 @@ function updateContent38(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[39].style.backgroundColor  = "#80ff80";
-    p[39].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[39].style.backgroundColor  = "#333333";
     p[39].style.fontWeight  ="bold";
     p[39].style.color = "white";
     p[39].style.border = "1px solid black";
@@ -992,7 +966,7 @@ function updateContent39(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[40].style.backgroundColor  = "#80ff80";
-    p[40].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[40].style.backgroundColor  = "#333333";
     p[40].style.fontWeight  ="bold";
     p[40].style.color = "white";
     p[40].style.border = "1px solid black";
@@ -1017,7 +991,7 @@ function updateContent40(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[41].style.backgroundColor  = "#80ff80";
-    p[41].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[41].style.backgroundColor  = "#333333";
     p[41].style.fontWeight  ="bold";
     p[41].style.color = "white";
     p[41].style.border = "1px solid black";
@@ -1042,7 +1016,7 @@ function updateContent41(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[42].style.backgroundColor  = "#80ff80";
-    p[42].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[42].style.backgroundColor  = "#333333";
     p[42].style.fontWeight  ="bold";
     p[42].style.color = "white";
     p[42].style.border = "1px solid black";
@@ -1067,7 +1041,7 @@ function updateContent42(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[43].style.backgroundColor  = "#80ff80";
-    p[43].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[43].style.backgroundColor  = "#333333";
     p[43].style.fontWeight  ="bold";
     p[43].style.color = "white";
     p[43].style.border = "1px solid black";
@@ -1092,7 +1066,7 @@ function updateContent43(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[44].style.backgroundColor  = "#80ff80";
-    p[44].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[44].style.backgroundColor  = "#333333";
     p[44].style.fontWeight  ="bold";
     p[44].style.color = "white";
     p[44].style.border = "1px solid black";
@@ -1117,7 +1091,7 @@ function updateContent44(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[45].style.backgroundColor  = "#80ff80";
-    p[45].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[45].style.backgroundColor  = "#333333";
     p[45].style.fontWeight  ="bold";
     p[45].style.color = "white";
     p[45].style.border = "1px solid black";
@@ -1142,7 +1116,7 @@ function updateContent45(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[46].style.backgroundColor  = "#80ff80";
-    p[46].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[46].style.backgroundColor  = "#333333";
     p[46].style.fontWeight  ="bold";
     p[46].style.color = "white";
     p[46].style.border = "1px solid black";
@@ -1167,7 +1141,7 @@ function updateContent46(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[47].style.backgroundColor  = "#80ff80";
-    p[47].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[47].style.backgroundColor  = "#333333";
     p[47].style.fontWeight  ="bold";
     p[47].style.color = "white";
     p[47].style.border = "1px solid black";
@@ -1192,7 +1166,7 @@ function updateContent47(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[48].style.backgroundColor  = "#80ff80";
-    p[48].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[48].style.backgroundColor  = "#333333";
     p[48].style.fontWeight  ="bold";
     p[48].style.color = "white";
     p[48].style.border = "1px solid black";
@@ -1217,7 +1191,7 @@ function updateContent48(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[49].style.backgroundColor  = "#80ff80";
-    p[49].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[49].style.backgroundColor  = "#333333";
     p[49].style.fontWeight  ="bold";
     p[49].style.color = "white";
     p[49].style.border = "1px solid black";
@@ -1242,7 +1216,7 @@ function updateContent49(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[50].style.backgroundColor  = "#80ff80";
-    p[50].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[50].style.backgroundColor  = "#333333";
     p[50].style.fontWeight  ="bold";
     p[50].style.color = "white";
     p[50].style.border = "1px solid black";
@@ -1267,7 +1241,7 @@ function updateContent50(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[51].style.backgroundColor  = "#80ff80";
-    p[51].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[51].style.backgroundColor  = "#333333";
     p[51].style.fontWeight  ="bold";
     p[51].style.color = "white";
     p[51].style.border = "1px solid black";
@@ -1292,7 +1266,7 @@ function updateContent51(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[52].style.backgroundColor  = "#80ff80";
-    p[52].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[52].style.backgroundColor  = "#333333";
     p[52].style.fontWeight  ="bold";
     p[52].style.color = "white";
     p[52].style.border = "1px solid black";
@@ -1317,7 +1291,7 @@ function updateContent52(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[53].style.backgroundColor  = "#80ff80";
-    p[53].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[53].style.backgroundColor  = "#333333";
     p[53].style.fontWeight  ="bold";
     p[53].style.color = "white";
     p[53].style.border = "1px solid black";
@@ -1342,7 +1316,7 @@ function updateContent53(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[54].style.backgroundColor  = "#80ff80";
-    p[54].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[54].style.backgroundColor  = "#333333";
     p[54].style.fontWeight  ="bold";
     p[54].style.color = "white";
     p[54].style.border = "1px solid black";
@@ -1367,7 +1341,7 @@ function updateContent54(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[55].style.backgroundColor  = "#80ff80";
-    p[55].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[55].style.backgroundColor  = "#333333";
     p[55].style.fontWeight  ="bold";
     p[55].style.color = "white";
     p[55].style.border = "1px solid black";
@@ -1392,7 +1366,7 @@ function updateContent55(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[56].style.backgroundColor  = "#80ff80";
-    p[56].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[56].style.backgroundColor  = "#333333";
     p[56].style.fontWeight  ="bold";
     p[56].style.color = "white";
     p[56].style.border = "1px solid black";
@@ -1417,7 +1391,7 @@ function updateContent56(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[57].style.backgroundColor  = "#80ff80";
-    p[57].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[57].style.backgroundColor  = "#333333";
     p[57].style.fontWeight  ="bold";
     p[57].style.color = "white";
     p[57].style.border = "1px solid black";
@@ -1442,7 +1416,7 @@ function updateContent57(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[58].style.backgroundColor  = "#80ff80";
-    p[58].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[58].style.backgroundColor  = "#333333";
     p[58].style.fontWeight  ="bold";
     p[58].style.color = "white";
     p[58].style.border = "1px solid black";
@@ -1467,7 +1441,7 @@ function updateContent58(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[59].style.backgroundColor  = "#80ff80";
-    p[59].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[59].style.backgroundColor  = "#333333";
     p[59].style.fontWeight  ="bold";
     p[59].style.color = "white";
     p[59].style.border = "1px solid black";
@@ -1492,7 +1466,7 @@ function updateContent59(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[60].style.backgroundColor  = "#80ff80";
-    p[60].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[60].style.backgroundColor  = "#333333";
     p[60].style.fontWeight  ="bold";
     p[60].style.color = "white";
     p[60].style.border = "1px solid black";
@@ -1517,7 +1491,7 @@ function updateContent60(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[61].style.backgroundColor  = "#80ff80";
-    p[61].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[61].style.backgroundColor  = "#333333";
     p[61].style.fontWeight  ="bold";
     p[61].style.color = "white";
     p[61].style.border = "1px solid black";
@@ -1542,7 +1516,7 @@ function updateContent61(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[62].style.backgroundColor  = "#80ff80";
-    p[62].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[62].style.backgroundColor  = "#333333";
     p[62].style.fontWeight  ="bold";
     p[62].style.color = "white";
     p[62].style.border = "1px solid black";
@@ -1567,7 +1541,7 @@ function updateContent62(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[63].style.backgroundColor  = "#80ff80";
-    p[63].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[63].style.backgroundColor  = "#333333";
     p[63].style.fontWeight  ="bold";
     p[63].style.color = "white";
     p[63].style.border = "1px solid black";
@@ -1592,7 +1566,7 @@ function updateContent63(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[64].style.backgroundColor  = "#80ff80";
-    p[64].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[64].style.backgroundColor  = "#333333";
     p[64].style.fontWeight  ="bold";
     p[64].style.color = "white";
     p[64].style.border = "1px solid black";
@@ -1617,7 +1591,7 @@ function updateContent64(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[65].style.backgroundColor  = "#80ff80";
-    p[65].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[65].style.backgroundColor  = "#333333";
     p[65].style.fontWeight  ="bold";
     p[65].style.color = "white";
     p[65].style.border = "1px solid black";
@@ -1642,7 +1616,7 @@ function updateContent65(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[66].style.backgroundColor  = "#80ff80";
-    p[66].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[66].style.backgroundColor  = "#333333";
     p[66].style.fontWeight  ="bold";
     p[66].style.color = "white";
     p[66].style.border = "1px solid black";
@@ -1667,7 +1641,7 @@ function updateContent66(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[67].style.backgroundColor  = "#80ff80";
-    p[67].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[67].style.backgroundColor  = "#333333";
     p[67].style.fontWeight  ="bold";
     p[67].style.color = "white";
     p[67].style.border = "1px solid black";
@@ -1692,7 +1666,7 @@ function updateContent67(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[68].style.backgroundColor  = "#80ff80";
-    p[68].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[68].style.backgroundColor  = "#333333";
     p[68].style.fontWeight  ="bold";
     p[68].style.color = "white";
     p[68].style.border = "1px solid black";
@@ -1717,7 +1691,7 @@ function updateContent68(optionEnabled) {
   let p = document.getElementsByClassName("nw-fm-tree-folder");
   if (optionEnabled) {
     p[69].style.backgroundColor  = "#80ff80";
-    p[69].style.backgroundColor  = "rgb(56, 21, 105)";
+    p[69].style.backgroundColor  = "#333333";
     p[69].style.fontWeight  ="bold";
     p[69].style.color = "white";
     p[69].style.border = "1px solid black";
