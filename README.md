@@ -23,4 +23,4 @@
 - Under the MIT license
 
 ## How it looks like:
-<img src="Images\How it looks like (v1.0).png" width="1000" height="600" align="center">
+<img src="Images\How it looks like (v1.0).png" width="1000" height="523.0366492146597" align="center">
