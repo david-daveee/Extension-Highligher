@@ -15,7 +15,7 @@
 1.  Download and install this extension through <a href="chrome://extensions/">"chrome://extensions/"</a> (<a href="https://dev.to/ben/how-to-install-chrome-extensions-manually-from-github-1612">click for detailed explanation</a>). </br>
 2.  Open the site (<a href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA">mega.nz</a>) and in the extension panel which is located in the upper corner, click on our extension. </br>
 3.  In the window that opens, select the courses that you need (by course number). </br>
-4.  If you want to remove the course from the selection, then uncheck the checkbox and reload the web page. </br>
+4.  If you want to remove the course from the selection, then uncheck the checkbox. </br>
 ## Developers:</br>
 - <a href="https://github.com/david-daveee">David Nalivkin</a>
 
