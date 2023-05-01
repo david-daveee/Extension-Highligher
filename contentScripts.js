@@ -12,18 +12,33 @@ chrome.storage.sync.get(['option1Enabled'], function(result) {
   updateContent1(result.option1Enabled || false);
 });
 
-function updateContent1(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[2].style.backgroundColor  = "#80ff80";
-    p[2].style.backgroundColor  = "#333333";
-    p[2].style.fontWeight  ="bold";
-    p[2].style.color = "white";
-    p[2].style.border = "1px solid black";
-    p[2].style.borderRadius = "5px";
+function cssChanger(p,q,z){ //p,q,optionEnabled
+  if (z) {
+    p.style.backgroundColor  = "#fee08a"; 
+    p.style.fontWeight  ="bold";
+    p.style.color = "white";
+    p.style.border = "1px solid black";
+    p.style.borderRadius = "5px";
+
+    q.style.color = "black";
   } else {
-    document.body.style.backgroundColor = '';
+    p.style.backgroundColor  = "";
+    p.style.fontWeight  ="";
+    p.style.color = "";
+    p.style.border = "";
+    p.style.borderRadius = "";
+
+    q.style.color = "";
   }
+}
+
+
+
+function updateContent1(optionEnabled) {
+  id_folder = "treeli_JW5kHI7S";
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option2 contentScripts js
@@ -38,17 +53,9 @@ chrome.storage.sync.get(['option2Enabled'], function(result) {
 });
 
 function updateContent2(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[3].style.backgroundColor  = "#80ff80";
-    p[3].style.backgroundColor  = "#333333";
-    p[3].style.fontWeight  ="bold";
-    p[3].style.color = "white";
-    p[3].style.border = "1px solid black";
-    p[3].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  let id_folder ="treeli_EbpFDBAa";
+  cssChanger(document.getElementById(id_folder),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option3 contentScripts js
@@ -63,17 +70,10 @@ chrome.storage.sync.get(['option3Enabled'], function(result) {
 });
 
 function updateContent3(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[4].style.backgroundColor  = "#80ff80";
-    p[4].style.backgroundColor  = "#333333";
-    p[4].style.fontWeight  ="bold";
-    p[4].style.color = "white";
-    p[4].style.border = "1px solid black";
-    p[4].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  let id_folder ="treeli_VWAyTDZR";
+  cssChanger(document.getElementById(id_folder),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option4 contentScripts js
@@ -88,17 +88,10 @@ chrome.storage.sync.get(['option4Enabled'], function(result) {
 });
 
 function updateContent4(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[5].style.backgroundColor  = "#80ff80";
-    p[5].style.backgroundColor  = "#333333";
-    p[5].style.fontWeight  ="bold";
-    p[5].style.color = "white";
-    p[5].style.border = "1px solid black";
-    p[5].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_xD53QKZC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option5 contentScripts js
@@ -113,17 +106,10 @@ chrome.storage.sync.get(['option5Enabled'], function(result) {
 });
 
 function updateContent5(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[6].style.backgroundColor  = "#80ff80";
-    p[6].style.backgroundColor  = "#333333";
-    p[6].style.fontWeight  ="bold";
-    p[6].style.color = "white";
-    p[6].style.border = "1px solid black";
-    p[6].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_sHgxSYjK"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option6 contentScripts js
@@ -138,17 +124,10 @@ chrome.storage.sync.get(['option6Enabled'], function(result) {
 });
 
 function updateContent6(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[7].style.backgroundColor  = "#80ff80";
-    p[7].style.backgroundColor  = "#333333";
-    p[7].style.fontWeight  ="bold";
-    p[7].style.color = "white";
-    p[7].style.border = "1px solid black";
-    p[7].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_MLgV3SSa"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option7 contentScripts js
@@ -163,17 +142,10 @@ chrome.storage.sync.get(['option7Enabled'], function(result) {
 });
 
 function updateContent7(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[8].style.backgroundColor  = "#80ff80";
-    p[8].style.backgroundColor  = "#333333";
-    p[8].style.fontWeight  ="bold";
-    p[8].style.color = "white";
-    p[8].style.border = "1px solid black";
-    p[8].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_sHJgCbbY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
+  
 }
 
 //option8 contentScripts js
@@ -188,17 +160,9 @@ chrome.storage.sync.get(['option8Enabled'], function(result) {
 });
 
 function updateContent8(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[9].style.backgroundColor  = "#80ff80";
-    p[9].style.backgroundColor  = "#333333";
-    p[9].style.fontWeight  ="bold";
-    p[9].style.color = "white";
-    p[9].style.border = "1px solid black";
-    p[9].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_1LQCDZwS"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option9 contentScripts js
@@ -213,17 +177,9 @@ chrome.storage.sync.get(['option9Enabled'], function(result) {
 });
 
 function updateContent9(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[10].style.backgroundColor  = "#80ff80";
-    p[10].style.backgroundColor  = "#333333";
-    p[10].style.fontWeight  ="bold";
-    p[10].style.color = "white";
-    p[10].style.border = "1px solid black";
-    p[10].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_VOoQBZIJ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option10 contentScripts js
@@ -238,17 +194,9 @@ chrome.storage.sync.get(['option10Enabled'], function(result) {
 });
 
 function updateContent10(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[11].style.backgroundColor  = "#80ff80";
-    p[11].style.backgroundColor  = "#333333";
-    p[11].style.fontWeight  ="bold";
-    p[11].style.color = "white";
-    p[11].style.border = "1px solid black";
-    p[11].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_5awxwa4R"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option11 contentScripts js
@@ -263,17 +211,9 @@ chrome.storage.sync.get(['option11Enabled'], function(result) {
 });
 
 function updateContent11(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[12].style.backgroundColor  = "#80ff80";
-    p[12].style.backgroundColor  = "#333333";
-    p[12].style.fontWeight  ="bold";
-    p[12].style.color = "white";
-    p[12].style.border = "1px solid black";
-    p[12].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_YHomXDaI"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option12 contentScripts js
@@ -288,17 +228,9 @@ chrome.storage.sync.get(['option12Enabled'], function(result) {
 });
 
 function updateContent12(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[13].style.backgroundColor  = "#80ff80";
-    p[13].style.backgroundColor  = "#333333";
-    p[13].style.fontWeight  ="bold";
-    p[13].style.color = "white";
-    p[13].style.border = "1px solid black";
-    p[13].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_4XZniACb"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option13 contentScripts js
@@ -313,17 +245,9 @@ chrome.storage.sync.get(['option13Enabled'], function(result) {
 });
 
 function updateContent13(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[14].style.backgroundColor  = "#80ff80";
-    p[14].style.backgroundColor  = "#333333";
-    p[14].style.fontWeight  ="bold";
-    p[14].style.color = "white";
-    p[14].style.border = "1px solid black";
-    p[14].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_EfA0WYYJ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option14 contentScripts js
@@ -338,18 +262,11 @@ chrome.storage.sync.get(['option14Enabled'], function(result) {
 });
 
 function updateContent14(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[15].style.backgroundColor  = "#80ff80";
-    p[15].style.backgroundColor  = "#333333";
-    p[15].style.fontWeight  ="bold";
-    p[15].style.color = "white";
-    p[15].style.border = "1px solid black";
-    p[15].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_ofpgGbjZ"; //TODO: FIXME:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
+
 
 //option15 contentScripts js
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -363,17 +280,9 @@ chrome.storage.sync.get(['option15Enabled'], function(result) {
 });
 
 function updateContent15(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[16].style.backgroundColor  = "#80ff80";
-    p[16].style.backgroundColor  = "#333333";
-    p[16].style.fontWeight  ="bold";
-    p[16].style.color = "white";
-    p[16].style.border = "1px solid black";
-    p[16].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_gPRwCR7Q"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option16 contentScripts js
@@ -388,17 +297,9 @@ chrome.storage.sync.get(['option16Enabled'], function(result) {
 });
 
 function updateContent16(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[17].style.backgroundColor  = "#80ff80";
-    p[17].style.backgroundColor  = "#333333";
-    p[17].style.fontWeight  ="bold";
-    p[17].style.color = "white";
-    p[17].style.border = "1px solid black";
-    p[17].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_4DpFCJya"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option17 contentScripts js
@@ -413,17 +314,9 @@ chrome.storage.sync.get(['option17Enabled'], function(result) {
 });
 
 function updateContent17(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[18].style.backgroundColor  = "#80ff80";
-    p[18].style.backgroundColor  = "#333333";
-    p[18].style.fontWeight  ="bold";
-    p[18].style.color = "white";
-    p[18].style.border = "1px solid black";
-    p[18].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_xTRSEIqY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option18 contentScripts js
@@ -438,17 +331,9 @@ chrome.storage.sync.get(['option18Enabled'], function(result) {
 });
 
 function updateContent18(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[19].style.backgroundColor  = "#80ff80";
-    p[19].style.backgroundColor  = "#333333";
-    p[19].style.fontWeight  ="bold";
-    p[19].style.color = "white";
-    p[19].style.border = "1px solid black";
-    p[19].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_tDhUXYoQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option19 contentScripts js
@@ -463,17 +348,9 @@ chrome.storage.sync.get(['option19Enabled'], function(result) {
 });
 
 function updateContent19(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[20].style.backgroundColor  = "#80ff80";
-    p[20].style.backgroundColor  = "#333333";
-    p[20].style.fontWeight  ="bold";
-    p[20].style.color = "white";
-    p[20].style.border = "1px solid black";
-    p[20].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_kXoDUYyK"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option20 contentScripts js
@@ -488,17 +365,9 @@ chrome.storage.sync.get(['option20Enabled'], function(result) {
 });
 
 function updateContent20(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[21].style.backgroundColor  = "#80ff80";
-    p[21].style.backgroundColor  = "#333333";
-    p[21].style.fontWeight  ="bold";
-    p[21].style.color = "white";
-    p[21].style.border = "1px solid black";
-    p[21].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_4HYUyDYK"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option21 contentScripts js
@@ -513,17 +382,9 @@ chrome.storage.sync.get(['option21Enabled'], function(result) {
 });
 
 function updateContent21(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[22].style.backgroundColor  = "#80ff80";
-    p[22].style.backgroundColor  = "#333333";
-    p[22].style.fontWeight  ="bold";
-    p[22].style.color = "white";
-    p[22].style.border = "1px solid black";
-    p[22].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_4XITlJSQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option22 contentScripts js
@@ -538,17 +399,9 @@ chrome.storage.sync.get(['option22Enabled'], function(result) {
 });
 
 function updateContent22(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[23].style.backgroundColor  = "#80ff80";
-    p[23].style.backgroundColor  = "#333333";
-    p[23].style.fontWeight  ="bold";
-    p[23].style.color = "white";
-    p[23].style.border = "1px solid black";
-    p[23].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_NfRxEIhB"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option23 contentScripts js
@@ -563,17 +416,9 @@ chrome.storage.sync.get(['option23Enabled'], function(result) {
 });
 
 function updateContent23(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[24].style.backgroundColor  = "#80ff80";
-    p[24].style.backgroundColor  = "#333333";
-    p[24].style.fontWeight  ="bold";
-    p[24].style.color = "white";
-    p[24].style.border = "1px solid black";
-    p[24].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_0SITgazR"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option24 contentScripts js
@@ -588,17 +433,9 @@ chrome.storage.sync.get(['option24Enabled'], function(result) {
 });
 
 function updateContent24(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[25].style.backgroundColor  = "#80ff80";
-    p[25].style.backgroundColor  = "#333333";
-    p[25].style.fontWeight  ="bold";
-    p[25].style.color = "white";
-    p[25].style.border = "1px solid black";
-    p[25].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_lOBjTAoC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option25 contentScripts js
@@ -613,17 +450,9 @@ chrome.storage.sync.get(['option25Enabled'], function(result) {
 });
 
 function updateContent25(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[26].style.backgroundColor  = "#80ff80";
-    p[26].style.backgroundColor  = "#333333";
-    p[26].style.fontWeight  ="bold";
-    p[26].style.color = "white";
-    p[26].style.border = "1px solid black";
-    p[26].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_cfpEzSJZ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option26 contentScripts js
@@ -638,17 +467,9 @@ chrome.storage.sync.get(['option26Enabled'], function(result) {
 });
 
 function updateContent26(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[27].style.backgroundColor  = "#80ff80";
-    p[27].style.backgroundColor  = "#333333";
-    p[27].style.fontWeight  ="bold";
-    p[27].style.color = "white";
-    p[27].style.border = "1px solid black";
-    p[27].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_FeZhyAqC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option27 contentScripts js
@@ -663,17 +484,9 @@ chrome.storage.sync.get(['option27Enabled'], function(result) {
 });
 
 function updateContent27(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[28].style.backgroundColor  = "#80ff80";
-    p[28].style.backgroundColor  = "#333333";
-    p[28].style.fontWeight  ="bold";
-    p[28].style.color = "white";
-    p[28].style.border = "1px solid black";
-    p[28].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_YTgkAQiQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option28 contentScripts js
@@ -688,17 +501,9 @@ chrome.storage.sync.get(['option28Enabled'], function(result) {
 });
 
 function updateContent28(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[29].style.backgroundColor  = "#80ff80";
-    p[29].style.backgroundColor  = "#333333";
-    p[29].style.fontWeight  ="bold";
-    p[29].style.color = "white";
-    p[29].style.border = "1px solid black";
-    p[29].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_8Xp0VCCY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option29 contentScripts js
@@ -713,17 +518,9 @@ chrome.storage.sync.get(['option29Enabled'], function(result) {
 });
 
 function updateContent29(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[30].style.backgroundColor  = "#80ff80";
-    p[30].style.backgroundColor  = "#333333";
-    p[30].style.fontWeight  ="bold";
-    p[30].style.color = "white";
-    p[30].style.border = "1px solid black";
-    p[30].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_VWwF0AQA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option30 contentScripts js
@@ -738,17 +535,9 @@ chrome.storage.sync.get(['option30Enabled'], function(result) {
 });
 
 function updateContent30(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[31].style.backgroundColor  = "#80ff80";
-    p[31].style.backgroundColor  = "#333333";
-    p[31].style.fontWeight  ="bold";
-    p[31].style.color = "white";
-    p[31].style.border = "1px solid black";
-    p[31].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_5LJ30CiA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option31 contentScripts js
@@ -763,17 +552,9 @@ chrome.storage.sync.get(['option31Enabled'], function(result) {
 });
 
 function updateContent31(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[32].style.backgroundColor  = "#80ff80";
-    p[32].style.backgroundColor  = "#333333";
-    p[32].style.fontWeight  ="bold";
-    p[32].style.color = "white";
-    p[32].style.border = "1px solid black";
-    p[32].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_9PACwLTQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option32 contentScripts js
@@ -788,17 +569,9 @@ chrome.storage.sync.get(['option32Enabled'], function(result) {
 });
 
 function updateContent32(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[33].style.backgroundColor  = "#80ff80";
-    p[33].style.backgroundColor  = "#333333";
-    p[33].style.fontWeight  ="bold";
-    p[33].style.color = "white";
-    p[33].style.border = "1px solid black";
-    p[33].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_QChiVK6Z"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option33 contentScripts js
@@ -813,17 +586,9 @@ chrome.storage.sync.get(['option33Enabled'], function(result) {
 });
 
 function updateContent33(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[34].style.backgroundColor  = "#80ff80";
-    p[34].style.backgroundColor  = "#333333";
-    p[34].style.fontWeight  ="bold";
-    p[34].style.color = "white";
-    p[34].style.border = "1px solid black";
-    p[34].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_YCxxQKzA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option34 contentScripts js
@@ -838,17 +603,9 @@ chrome.storage.sync.get(['option34Enabled'], function(result) {
 });
 
 function updateContent34(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[35].style.backgroundColor  = "#80ff80";
-    p[35].style.backgroundColor  = "#333333";
-    p[35].style.fontWeight  ="bold";
-    p[35].style.color = "white";
-    p[35].style.border = "1px solid black";
-    p[35].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_FKo03bRJ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option35 contentScripts js
@@ -863,17 +620,9 @@ chrome.storage.sync.get(['option35Enabled'], function(result) {
 });
 
 function updateContent35(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[36].style.backgroundColor  = "#80ff80";
-    p[36].style.backgroundColor  = "#333333";
-    p[36].style.fontWeight  ="bold";
-    p[36].style.color = "white";
-    p[36].style.border = "1px solid black";
-    p[36].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_8bRC0Zhb"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option36 contentScripts js
@@ -888,17 +637,9 @@ chrome.storage.sync.get(['option36Enabled'], function(result) {
 });
 
 function updateContent36(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[37].style.backgroundColor  = "#80ff80";
-    p[37].style.backgroundColor  = "#333333";
-    p[37].style.fontWeight  ="bold";
-    p[37].style.color = "white";
-    p[37].style.border = "1px solid black";
-    p[37].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_oCoHWCTJ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option37 contentScripts js
@@ -913,17 +654,9 @@ chrome.storage.sync.get(['option37Enabled'], function(result) {
 });
 
 function updateContent37(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[38].style.backgroundColor  = "#80ff80";
-    p[38].style.backgroundColor  = "#333333";
-    p[38].style.fontWeight  ="bold";
-    p[38].style.color = "white";
-    p[38].style.border = "1px solid black";
-    p[38].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_paxnSYYA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option38 contentScripts js
@@ -938,17 +671,9 @@ chrome.storage.sync.get(['option38Enabled'], function(result) {
 });
 
 function updateContent38(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[39].style.backgroundColor  = "#80ff80";
-    p[39].style.backgroundColor  = "#333333";
-    p[39].style.fontWeight  ="bold";
-    p[39].style.color = "white";
-    p[39].style.border = "1px solid black";
-    p[39].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_oSIGyQTY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option39 contentScripts js
@@ -963,17 +688,9 @@ chrome.storage.sync.get(['option39Enabled'], function(result) {
 });
 
 function updateContent39(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[40].style.backgroundColor  = "#80ff80";
-    p[40].style.backgroundColor  = "#333333";
-    p[40].style.fontWeight  ="bold";
-    p[40].style.color = "white";
-    p[40].style.border = "1px solid black";
-    p[40].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_8DIlCYBZ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option40 contentScripts js
@@ -988,17 +705,9 @@ chrome.storage.sync.get(['option40Enabled'], function(result) {
 });
 
 function updateContent40(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[41].style.backgroundColor  = "#80ff80";
-    p[41].style.backgroundColor  = "#333333";
-    p[41].style.fontWeight  ="bold";
-    p[41].style.color = "white";
-    p[41].style.border = "1px solid black";
-    p[41].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_EDgC1DZY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option41 contentScripts js
@@ -1013,17 +722,9 @@ chrome.storage.sync.get(['option41Enabled'], function(result) {
 });
 
 function updateContent41(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[42].style.backgroundColor  = "#80ff80";
-    p[42].style.backgroundColor  = "#333333";
-    p[42].style.fontWeight  ="bold";
-    p[42].style.color = "white";
-    p[42].style.border = "1px solid black";
-    p[42].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_Jfh2DYBb"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option42 contentScripts js
@@ -1038,17 +739,9 @@ chrome.storage.sync.get(['option42Enabled'], function(result) {
 });
 
 function updateContent42(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[43].style.backgroundColor  = "#80ff80";
-    p[43].style.backgroundColor  = "#333333";
-    p[43].style.fontWeight  ="bold";
-    p[43].style.color = "white";
-    p[43].style.border = "1px solid black";
-    p[43].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_kOh1GbBQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option43 contentScripts js
@@ -1063,17 +756,9 @@ chrome.storage.sync.get(['option43Enabled'], function(result) {
 });
 
 function updateContent43(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[44].style.backgroundColor  = "#80ff80";
-    p[44].style.backgroundColor  = "#333333";
-    p[44].style.fontWeight  ="bold";
-    p[44].style.color = "white";
-    p[44].style.border = "1px solid black";
-    p[44].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_1fw3USgC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option44 contentScripts js
@@ -1088,17 +773,9 @@ chrome.storage.sync.get(['option44Enabled'], function(result) {
 });
 
 function updateContent44(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[45].style.backgroundColor  = "#80ff80";
-    p[45].style.backgroundColor  = "#333333";
-    p[45].style.fontWeight  ="bold";
-    p[45].style.color = "white";
-    p[45].style.border = "1px solid black";
-    p[45].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_1eYnkRbI"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option45 contentScripts js
@@ -1113,17 +790,9 @@ chrome.storage.sync.get(['option45Enabled'], function(result) {
 });
 
 function updateContent45(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[46].style.backgroundColor  = "#80ff80";
-    p[46].style.backgroundColor  = "#333333";
-    p[46].style.fontWeight  ="bold";
-    p[46].style.color = "white";
-    p[46].style.border = "1px solid black";
-    p[46].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_dXhVjbha"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option46 contentScripts js
@@ -1138,17 +807,9 @@ chrome.storage.sync.get(['option46Enabled'], function(result) {
 });
 
 function updateContent46(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[47].style.backgroundColor  = "#80ff80";
-    p[47].style.backgroundColor  = "#333333";
-    p[47].style.fontWeight  ="bold";
-    p[47].style.color = "white";
-    p[47].style.border = "1px solid black";
-    p[47].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_xPQR0AZA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option47 contentScripts js
@@ -1163,17 +824,9 @@ chrome.storage.sync.get(['option47Enabled'], function(result) {
 });
 
 function updateContent47(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[48].style.backgroundColor  = "#80ff80";
-    p[48].style.backgroundColor  = "#333333";
-    p[48].style.fontWeight  ="bold";
-    p[48].style.color = "white";
-    p[48].style.border = "1px solid black";
-    p[48].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_NahTTDQQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option48 contentScripts js
@@ -1188,17 +841,9 @@ chrome.storage.sync.get(['option48Enabled'], function(result) {
 });
 
 function updateContent48(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[49].style.backgroundColor  = "#80ff80";
-    p[49].style.backgroundColor  = "#333333";
-    p[49].style.fontWeight  ="bold";
-    p[49].style.color = "white";
-    p[49].style.border = "1px solid black";
-    p[49].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_JawjhYzR"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option49 contentScripts js
@@ -1213,17 +858,9 @@ chrome.storage.sync.get(['option49Enabled'], function(result) {
 });
 
 function updateContent49(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[50].style.backgroundColor  = "#80ff80";
-    p[50].style.backgroundColor  = "#333333";
-    p[50].style.fontWeight  ="bold";
-    p[50].style.color = "white";
-    p[50].style.border = "1px solid black";
-    p[50].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_0OwTUYpT"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option50 contentScripts js
@@ -1238,17 +875,9 @@ chrome.storage.sync.get(['option50Enabled'], function(result) {
 });
 
 function updateContent50(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[51].style.backgroundColor  = "#80ff80";
-    p[51].style.backgroundColor  = "#333333";
-    p[51].style.fontWeight  ="bold";
-    p[51].style.color = "white";
-    p[51].style.border = "1px solid black";
-    p[51].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_gHJjQQab"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option51 contentScripts js
@@ -1263,17 +892,9 @@ chrome.storage.sync.get(['option51Enabled'], function(result) {
 });
 
 function updateContent51(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[52].style.backgroundColor  = "#80ff80";
-    p[52].style.backgroundColor  = "#333333";
-    p[52].style.fontWeight  ="bold";
-    p[52].style.color = "white";
-    p[52].style.border = "1px solid black";
-    p[52].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_cLZUCJbR"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option52 contentScripts js
@@ -1288,17 +909,9 @@ chrome.storage.sync.get(['option52Enabled'], function(result) {
 });
 
 function updateContent52(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[53].style.backgroundColor  = "#80ff80";
-    p[53].style.backgroundColor  = "#333333";
-    p[53].style.fontWeight  ="bold";
-    p[53].style.color = "white";
-    p[53].style.border = "1px solid black";
-    p[53].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_oSZCGZQb"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option53 contentScripts js
@@ -1313,17 +926,9 @@ chrome.storage.sync.get(['option53Enabled'], function(result) {
 });
 
 function updateContent53(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[54].style.backgroundColor  = "#80ff80";
-    p[54].style.backgroundColor  = "#333333";
-    p[54].style.fontWeight  ="bold";
-    p[54].style.color = "white";
-    p[54].style.border = "1px solid black";
-    p[54].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_4W5WVCIR"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option54 contentScripts js
@@ -1338,17 +943,9 @@ chrome.storage.sync.get(['option54Enabled'], function(result) {
 });
 
 function updateContent54(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[55].style.backgroundColor  = "#80ff80";
-    p[55].style.backgroundColor  = "#333333";
-    p[55].style.fontWeight  ="bold";
-    p[55].style.color = "white";
-    p[55].style.border = "1px solid black";
-    p[55].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_oKxxAYDa"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option55 contentScripts js
@@ -1363,17 +960,9 @@ chrome.storage.sync.get(['option55Enabled'], function(result) {
 });
 
 function updateContent55(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[56].style.backgroundColor  = "#80ff80";
-    p[56].style.backgroundColor  = "#333333";
-    p[56].style.fontWeight  ="bold";
-    p[56].style.color = "white";
-    p[56].style.border = "1px solid black";
-    p[56].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_Uf4THZja"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option56 contentScripts js
@@ -1388,17 +977,9 @@ chrome.storage.sync.get(['option56Enabled'], function(result) {
 });
 
 function updateContent56(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[57].style.backgroundColor  = "#80ff80";
-    p[57].style.backgroundColor  = "#333333";
-    p[57].style.fontWeight  ="bold";
-    p[57].style.color = "white";
-    p[57].style.border = "1px solid black";
-    p[57].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_1PpVjI5B"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option57 contentScripts js
@@ -1413,17 +994,9 @@ chrome.storage.sync.get(['option57Enabled'], function(result) {
 });
 
 function updateContent57(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[58].style.backgroundColor  = "#80ff80";
-    p[58].style.backgroundColor  = "#333333";
-    p[58].style.fontWeight  ="bold";
-    p[58].style.color = "white";
-    p[58].style.border = "1px solid black";
-    p[58].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_pLoyGYaD"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option58 contentScripts js
@@ -1438,17 +1011,9 @@ chrome.storage.sync.get(['option58Enabled'], function(result) {
 });
 
 function updateContent58(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[59].style.backgroundColor  = "#80ff80";
-    p[59].style.backgroundColor  = "#333333";
-    p[59].style.fontWeight  ="bold";
-    p[59].style.color = "white";
-    p[59].style.border = "1px solid black";
-    p[59].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_pew1gaja"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option59 contentScripts js
@@ -1463,17 +1028,9 @@ chrome.storage.sync.get(['option59Enabled'], function(result) {
 });
 
 function updateContent59(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[60].style.backgroundColor  = "#80ff80";
-    p[60].style.backgroundColor  = "#333333";
-    p[60].style.fontWeight  ="bold";
-    p[60].style.color = "white";
-    p[60].style.border = "1px solid black";
-    p[60].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_9agmFZAZ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option60 contentScripts js
@@ -1488,17 +1045,9 @@ chrome.storage.sync.get(['option60Enabled'], function(result) {
 });
 
 function updateContent60(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[61].style.backgroundColor  = "#80ff80";
-    p[61].style.backgroundColor  = "#333333";
-    p[61].style.fontWeight  ="bold";
-    p[61].style.color = "white";
-    p[61].style.border = "1px solid black";
-    p[61].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_UOpxQLpC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option61 contentScripts js
@@ -1513,17 +1062,9 @@ chrome.storage.sync.get(['option61Enabled'], function(result) {
 });
 
 function updateContent61(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[62].style.backgroundColor  = "#80ff80";
-    p[62].style.backgroundColor  = "#333333";
-    p[62].style.fontWeight  ="bold";
-    p[62].style.color = "white";
-    p[62].style.border = "1px solid black";
-    p[62].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_ILgG3DzY"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option62 contentScripts js
@@ -1538,17 +1079,9 @@ chrome.storage.sync.get(['option62Enabled'], function(result) {
 });
 
 function updateContent62(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[63].style.backgroundColor  = "#80ff80";
-    p[63].style.backgroundColor  = "#333333";
-    p[63].style.fontWeight  ="bold";
-    p[63].style.color = "white";
-    p[63].style.border = "1px solid black";
-    p[63].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_NeZRRKpb"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option63 contentScripts js
@@ -1563,19 +1096,10 @@ chrome.storage.sync.get(['option63Enabled'], function(result) {
 });
 
 function updateContent63(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[64].style.backgroundColor  = "#80ff80";
-    p[64].style.backgroundColor  = "#333333";
-    p[64].style.fontWeight  ="bold";
-    p[64].style.color = "white";
-    p[64].style.border = "1px solid black";
-    p[64].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_cLRGDBqQ"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
-
 //option64 contentScripts js
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.action === 'updateOption64') {
@@ -1588,17 +1112,9 @@ chrome.storage.sync.get(['option64Enabled'], function(result) {
 });
 
 function updateContent64(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[65].style.backgroundColor  = "#80ff80";
-    p[65].style.backgroundColor  = "#333333";
-    p[65].style.fontWeight  ="bold";
-    p[65].style.color = "white";
-    p[65].style.border = "1px solid black";
-    p[65].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_Qeg1BKDC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option65 contentScripts js
@@ -1613,17 +1129,9 @@ chrome.storage.sync.get(['option65Enabled'], function(result) {
 });
 
 function updateContent65(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[66].style.backgroundColor  = "#80ff80";
-    p[66].style.backgroundColor  = "#333333";
-    p[66].style.fontWeight  ="bold";
-    p[66].style.color = "white";
-    p[66].style.border = "1px solid black";
-    p[66].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_RGITWDoC"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option66 contentScripts js
@@ -1638,17 +1146,9 @@ chrome.storage.sync.get(['option66Enabled'], function(result) {
 });
 
 function updateContent66(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[67].style.backgroundColor  = "#80ff80";
-    p[67].style.backgroundColor  = "#333333";
-    p[67].style.fontWeight  ="bold";
-    p[67].style.color = "white";
-    p[67].style.border = "1px solid black";
-    p[67].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_BOJECZ7B"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option67 contentScripts js
@@ -1663,17 +1163,9 @@ chrome.storage.sync.get(['option67Enabled'], function(result) {
 });
 
 function updateContent67(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[68].style.backgroundColor  = "#80ff80";
-    p[68].style.backgroundColor  = "#333333";
-    p[68].style.fontWeight  ="bold";
-    p[68].style.color = "white";
-    p[68].style.border = "1px solid black";
-    p[68].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_0egD0SKA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 //option68 contentScripts js
@@ -1688,17 +1180,9 @@ chrome.storage.sync.get(['option68Enabled'], function(result) {
 });
 
 function updateContent68(optionEnabled) {
-  let p = document.getElementsByClassName("nw-fm-tree-folder");
-  if (optionEnabled) {
-    p[69].style.backgroundColor  = "#80ff80";
-    p[69].style.backgroundColor  = "#333333";
-    p[69].style.fontWeight  ="bold";
-    p[69].style.color = "white";
-    p[69].style.border = "1px solid black";
-    p[69].style.borderRadius = "5px";
-  } else {
-    document.body.style.backgroundColor = '';
-  }
+  id_folder = "treeli_gHZGQILA"; //TODO:
+  cssChanger(document.getElementById(`${id_folder}`),document.querySelector(`#${id_folder} .nw-fm-tree-folder`),
+  optionEnabled);
 }
 
 
