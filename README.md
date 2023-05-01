@@ -10,7 +10,7 @@
 
 ## About:
 **This extension helps to highlight on the site (MEGA) the courses that you are studying now,
-  and do not search them again every time. <a href="https://github.com/david-daveee/Extension-Highligher?plain=1#L26">How It Looks Like</a>**
+  and do not search them again every time. <a href="https://github.com/david-daveee/Extension-Highligher/README.md?plain=1#L26">How It Looks Like</a>**
 ## Everything you need:
 1.  Download and install this extension through <a href="chrome://extensions/">"chrome://extensions/"</a> (<a href="https://dev.to/ben/how-to-install-chrome-extensions-manually-from-github-1612">click for detailed explanation</a>). </br>
 2.  Open the site (<a href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA">mega.nz</a>) and in the extension panel which is located in the upper corner, click on our extension. </br>
