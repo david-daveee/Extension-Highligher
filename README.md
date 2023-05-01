@@ -7,6 +7,7 @@
 <a href= "https://discord.com/channels/761272611476602942/761272611476602945"><img src="https://img.shields.io/github/license/david-daveee/Extension-Highligher.svg"><a/>
 </p>
 
+
 ## About:
 **This extension helps to highlight on the site (MEGA) the courses that you are studying now,
   and do not search them again every time.**
@@ -20,3 +21,6 @@
 
 ## License:
 - Under the MIT license
+
+## How it looks like:
+<img src="Images\How it looks like (v1.0).png" width="1000" height="600" align="center">
