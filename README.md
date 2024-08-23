@@ -22,6 +22,6 @@
 ## License:
 - Under the <a href="https://github.com/david-daveee/Extension-Highligher/blob/main-branch-extension-highlighter/LICENSE">MIT license</a>
 
-## How it looks like:
+## How its looks like:
 <img src="https://user-images.githubusercontent.com/84546888/235386953-8c45767b-d8a9-4f39-a122-1bf1430f9063.gif"  align="center">
 
